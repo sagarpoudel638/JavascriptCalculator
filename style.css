@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.wrapper{
+    width: 350px;
+    height: 450px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 0;
+    box-sizing: border-box;
+    
+   
+} 
+.display {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#calc-display {
+    width: 100%;
+    height: 60px;
+    font-size: 2rem;
+    text-align: right;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #e0e0e0;
+}
+
+.numpad {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    margin-bottom: 20px;
+}
+
+button {
+    width: 100%;
+    height: 60px;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #d1d1d1;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #c0c0c0;
+}
+
+#clear {
+    background-color: #f44336;
+    color: white;
+    
+}
+#clear:hover{
+    background-color: #761d17;
+}
+
+#delete {
+    background-color: #ff9800;
+    color: white;
+}
+.operator {
+    background-color: #f9a825; /* Change to your preferred color */
+    color: white;
+}
+
+.operator:hover {
+    background-color: #f57f17; /* Darker shade for hover effect */
+}
+
+#equal {
+    
+    background-color: #4CAF50;
+    color: white;
+    
+}
+#equal:hover{
+    
+    background-color: #1e6621;
+    
+    
+}
+
+#add{
+    grid-row: span 2;
+    height: 100%;
+}
+
+button:nth-child(16) {
+    grid-column: span 2; /* Makes the 0 button span across two columns */
+}
